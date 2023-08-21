@@ -66,7 +66,9 @@
 
 .EXAMPLE
     .\CSV2SCIM.ps1 -Path '..\Samples\csv-with-2-records.csv' -AttributeMapping $AttributeMapping -ServicePrincipalId 41adf722-3217-4509-b7e9-e6e86cfbda2f -TenantId 74590b7d-28d8-4cbc-aa47-c81b1e969ae8
-    
+
+     Update Schema
+    .\CSV2SCIM.ps1 -Path '..\Samples\csv-with-2-records.csv' -UpdateSchema -ServicePrincipalId 41adf722-3217-4509-b7e9-e6e86cfbda2f -TenantId 74590b7d-28d8-4cbc-aa47-c81b1e969ae8 -ScimSchemaNamespace "urn:ietf:params:scim:schemas:extension:contoso:1.0:User"
 
 #>
 [CmdletBinding(DefaultParameterSetName = 'GenerateScimPayload')]
