@@ -63,6 +63,9 @@
     PS > CSV2SCIM.ps1 -ServicePrincipalId 00000000-0000-0000-0000-000000000000 -TenantId 00000000-0000-0000-0000-000000000000 -Path ".\Samples\csv-with-2-records.csv" -RestartService -AttributeMapping $attributMapping
     
      Generate a SCIM bulk request payload from CSV file, send SCIM bulk request to Entra ID and restart the provisioning service
+
+.EXAMPLE
+    .\CSV2SCIM.ps1 -Path '..\Samples\csv-with-2-records.csv' -AttributeMapping $AttributeMapping -ServicePrincipalId 41adf722-3217-4509-b7e9-e6e86cfbda2f -TenantId 74590b7d-28d8-4cbc-aa47-c81b1e969ae8
     
 
 #>
